@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scenes>
-    <scene desc="" format="4.0.1" id="1" name="Level 1"/>
+    <scene desc="" format="4.0.1" id="2" name="Start Screen"/>
+    <scene desc="" format="4.0.1" id="3" name="LevelTwo"/>
+    <scene desc="" format="4.0.1" id="4" name="BossLevel"/>
+    <scene desc="" format="4.0.1" id="5" name="StoryIntro"/>
+    <scene desc="" format="4.0.1" id="6" name="Story Ending"/>
+    <scene desc="" format="4.0.1" id="7" name="Credits"/>
+    <scene desc="" format="4.0.1" id="8" name="Options"/>
+    <scene desc="" format="4.0.1" id="9" name="LevelOne"/>
 </scenes>
