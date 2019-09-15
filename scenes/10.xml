@@ -8,8 +8,10 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="18" name="B_Start 1" order="0" sx="1.0" sy="1.0" x="224" y="192" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="20" name="B_Exit 2" order="1" sx="1.0" sy="1.0" x="224" y="320" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="3" id="18" name="B_Start 1" order="0" sx="0.2" sy="0.2" x="279" y="57" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="20" name="B_Exit 2" order="1" sx="0.2" sy="0.2" x="279" y="249" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="24" name="Title 3" order="2" sx="0.51875" sy="0.51875" x="-154" y="-154" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="26" name="B_Options 4" order="3" sx="0.2" sy="0.2" x="279" y="153" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

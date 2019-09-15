@@ -89,7 +89,9 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_5" classname="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="16" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" shared="false" type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_6" classname="scripts.SceneEvents_6" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="17" name="SceneEvents_6" oid="-1" package="scripts." sceneid="6" shared="false" type="scene">
         <blocks/>
@@ -132,6 +134,26 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_10" classname="scripts.SceneEvents_10" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="27" name="SceneEvents_10" oid="-1" package="scripts." sceneid="10" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="24" attachedevent="true" class="scripts.ActorEvents_24" classname="scripts.ActorEvents_24" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_24" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="26" attachedevent="true" class="scripts.ActorEvents_26" classname="scripts.ActorEvents_26" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="29" name="ActorEvents_26" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="30" attachedevent="true" class="scripts.ActorEvents_30" classname="scripts.ActorEvents_30" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="30" name="ActorEvents_30" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="7" attachedevent="true" class="scripts.ActorEvents_7" classname="scripts.ActorEvents_7" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="31" name="ActorEvents_7" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
