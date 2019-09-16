@@ -76,11 +76,11 @@ class SceneEvents_16 extends SceneScript
 	{
 		
 		/* ======================= After N seconds ======================== */
-		runLater(1000 * 8, function(timeTask:TimedTask):Void
+		runLater(1000 * 5, function(timeTask:TimedTask):Void
 		{
 			if(wrapper.enabled)
 			{
-				switchScene(GameModel.get().scenes.get(17).getID(), null, createCrossfadeTransition(1.5));
+				switchScene(GameModel.get().scenes.get(17).getID(), null, createCrossfadeTransition(0.5));
 			}
 		}, null);
 		
@@ -90,7 +90,7 @@ class SceneEvents_16 extends SceneScript
 			if(wrapper.enabled)
 			{
 				g.setFont(getFont(29));
-				g.drawString("" + "\"I...i lived. Is it time?\" She mutters to the people around her.", 30, 420);
+				g.drawString("" + "\"I...i lived. Is it time?\" She mutters to the people around her.", 35, 400);
 			}
 		});
 		

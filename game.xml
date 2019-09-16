@@ -10,10 +10,10 @@
         <e enabled="false" id="test-flash"/>
     </exts>
     <bundles>
-        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
+        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
         <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0"/>
         <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
-        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
+        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
     </bundles>
     <scales>
         <scale detailed="1x" id="0" name="1x" size="1.0"/>
@@ -74,7 +74,10 @@
         </group>
         <group desc="Buttons" id="3" name="Buttons" type="actortype">
             <r id="18"/>
+            <r id="50"/>
             <r id="20"/>
+            <r id="52"/>
+            <r id="54"/>
             <r id="39"/>
             <r id="41"/>
             <r id="26"/>
@@ -120,6 +123,7 @@
     <props/>
     <attributes>
         <number cid="-1" id="3" name="Score" save="true" value="0.0"/>
+        <number cid="-1" id="6" name="SongSelect" save="true" value="0.0"/>
         <boolean cid="-1" id="2" name="Slide and Increase Speed" save="true" value="false"/>
         <boolean cid="-1" id="5" name="IsPlaying" save="true" value="false"/>
         <boolean cid="-1" id="4" name="Mute" save="true" value="false"/>
@@ -150,7 +154,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,15,16,18,20,24,26,28,29,30,32,34,35,36,37,38,39,41,43,44,46,48," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,15,16,18,20,24,26,28,29,30,32,34,35,36,37,38,39,41,43,44,46,48,50,52,54,56,57," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

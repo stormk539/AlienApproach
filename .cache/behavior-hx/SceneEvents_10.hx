@@ -78,7 +78,7 @@ class SceneEvents_10 extends SceneScript
 		/* ======================== When Creating ========================= */
 		if(((Engine.engine.getGameAttribute("IsPlaying") : Bool) == false))
 		{
-			playSoundOnChannel(getSound(43), 1);
+			loopSoundOnChannel(getSound(43), 1);
 			setVolumeForChannel(50/100, 1);
 			Engine.engine.setGameAttribute("IsPlaying", true);
 		}
