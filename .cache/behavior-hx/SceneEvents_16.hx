@@ -43,6 +43,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -61,25 +62,35 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_26 extends ActorScript
+class SceneEvents_16 extends SceneScript
 {
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
+		super();
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		/* ======================= After N seconds ======================== */
+		runLater(1000 * 8, function(timeTask:TimedTask):Void
 		{
-			if(wrapper.enabled && 3 == mouseState)
+			if(wrapper.enabled)
 			{
-				switchScene(GameModel.get().scenes.get(8).getID(), null, createCrossfadeTransition(1.5));
+				switchScene(GameModel.get().scenes.get(17).getID(), null, createCrossfadeTransition(1.5));
+			}
+		}, null);
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(29));
+				g.drawString("" + "\"I...i lived. Is it time?\" She mutters to the people around her.", 30, 420);
 			}
 		});
 		

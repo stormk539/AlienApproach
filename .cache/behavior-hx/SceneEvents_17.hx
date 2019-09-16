@@ -62,7 +62,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_10 extends SceneScript
+class SceneEvents_17 extends SceneScript
 {
 	
 	
@@ -75,8 +75,24 @@ class SceneEvents_10 extends SceneScript
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		playSoundOnChannel(getSound(43), 0);
+		/* ======================= After N seconds ======================== */
+		runLater(1000 * 8, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				switchScene(GameModel.get().scenes.get(20).getID(), null, createCrossfadeTransition(1.5));
+			}
+		}, null);
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(38));
+				g.drawString("" + "TO DESTORY THE WORLD", 100, 410);
+			}
+		});
 		
 	}
 	
