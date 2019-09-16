@@ -64,16 +64,88 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class SceneEvents_9 extends SceneScript
 {
+	public var _Score:Float;
+	public var _EneDeath:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("Score", "_Score");
+		_Score = 0.0;
+		nameMap.set("EneDeath", "_EneDeath");
+		_EneDeath = 0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		_Score = 500;
+		_EneDeath = 20;
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(38));
+				g.drawString("" + "Score: ", 460, 440);
+				g.drawString("" + _Score, 550, 440);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addWhenTypeGroupKilledListener(getActorType(5), function(eventActor:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_EneDeath = (_EneDeath - 1);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addWhenTypeGroupKilledListener(getActorType(7), function(eventActor:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_EneDeath = (_EneDeath - 1);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addWhenTypeGroupKilledListener(getActorType(3), function(eventActor:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_EneDeath = (_EneDeath - 1);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_EneDeath == 0))
+				{
+					switchScene(GameModel.get().scenes.get(15).getID(), null, createCrossfadeTransition(0.5));
+				}
+			}
+		});
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 2, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(getLastCreatedActor().isAlive())
+				{
+					_Score = (_Score - 10);
+				}
+			}
+		}, null);
 		
 	}
 	

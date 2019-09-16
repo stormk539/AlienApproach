@@ -63,16 +63,25 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_1 extends ActorScript
 {
+	public var _Score:Float;
+	public var _score01:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Score", "_Score");
+		_Score = 0.0;
+		nameMap.set("score01", "_score01");
+		_score01 = 0.0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		_Score = 0;
 		
 	}
 	

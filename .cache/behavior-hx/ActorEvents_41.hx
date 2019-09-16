@@ -74,6 +74,26 @@ class ActorEvents_41 extends ActorScript
 	override public function init()
 	{
 		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && 3 == mouseState)
+			{
+				if(((Engine.engine.getGameAttribute("Mute") : Bool) == false))
+				{
+					actor.setAnimation("Yes");
+					setVolumeForChannel(100/100, 1);
+					Engine.engine.setGameAttribute("Mute", true);
+				}
+				else if(((Engine.engine.getGameAttribute("Mute") : Bool) == true))
+				{
+					actor.setAnimation("No");
+					setVolumeForChannel(0/100, 1);
+					Engine.engine.setGameAttribute("Mute", false);
+				}
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="16" y="11">
+            <group eventID="1" id="-1">
+                <set-val-21-1 comment="false" x="27" y="36">
+                    <int id="0" val="0"/>
+                </set-val-21-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

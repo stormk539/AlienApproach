@@ -61,7 +61,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_39 extends ActorScript
+class ActorEvents_26 extends ActorScript
 {
 	
 	
@@ -79,7 +79,7 @@ class ActorEvents_39 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
-				switchScene(GameModel.get().scenes.get(10).getID(), null, createCrossfadeTransition(.30));
+				switchScene(GameModel.get().scenes.get(19).getID(), null, createCrossfadeTransition(0.30));
 			}
 		});
 		

@@ -76,11 +76,11 @@ class SceneEvents_15 extends SceneScript
 	{
 		
 		/* ======================= After N seconds ======================== */
-		runLater(1000 * 8, function(timeTask:TimedTask):Void
+		runLater(1000 * 5, function(timeTask:TimedTask):Void
 		{
 			if(wrapper.enabled)
 			{
-				switchScene(GameModel.get().scenes.get(16).getID(), null, createCrossfadeTransition(1.5));
+				switchScene(GameModel.get().scenes.get(16).getID(), null, createCrossfadeTransition(0.5));
 			}
 		}, null);
 		
@@ -90,7 +90,7 @@ class SceneEvents_15 extends SceneScript
 			if(wrapper.enabled)
 			{
 				g.setFont(getFont(29));
-				g.drawString("" + "She begins to awake, people begin to cheer as her eyes open", 50, 400);
+				g.drawString("" + "She begins to awake. People cheer as her eyes blink open.", 50, 400);
 			}
 		});
 		

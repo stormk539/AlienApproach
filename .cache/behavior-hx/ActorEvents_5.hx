@@ -64,6 +64,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 class ActorEvents_5 extends ActorScript
 {
 	public var _Score:Float;
+	public var _Death:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -71,11 +72,16 @@ class ActorEvents_5 extends ActorScript
 		super(actor);
 		nameMap.set("Score", "_Score");
 		_Score = 0.0;
+		nameMap.set("Death", "_Death");
+		_Death = 0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		_Death = 60;
 		
 	}
 	

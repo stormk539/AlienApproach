@@ -6,10 +6,10 @@
                 <scene-change-through comment="false" x="26" y="42">
                     <scene eid="16" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="1.5"/>
+                    <int id="2" val="0.5"/>
                 </scene-change-through>
             </group>
-            <int id="0" val="8"/>
+            <int id="0" val="5"/>
             <ACTOR eid="lastcreated" id="2"/>
         </event-delay>
     </group>
@@ -21,7 +21,7 @@
                     <font eid="29" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
-                    <int id="0" val="She begins to awake, people begin to cheer as her eyes open"/>
+                    <int id="0" val="She begins to awake. People cheer as her eyes blink open."/>
                     <int id="1" val="50"/>
                     <int id="2" val="400"/>
                 </draw-text>
