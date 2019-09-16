@@ -5,7 +5,7 @@
             <group eventID="-1" id="-1">
                 <play-sound4 comment="false" x="26" y="40">
                     <int id="0" val="0"/>
-                    <sound eid="var" id="1" vid="8"/>
+                    <sound eid="15" id="1"/>
                 </play-sound4>
                 <repeat comment="false" x="26" y="67">
                     <group eventID="-1" id="-1">

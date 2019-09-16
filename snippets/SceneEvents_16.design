@@ -1,2 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <scene-change-through comment="false" x="26" y="42">
+                    <scene eid="17" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1.5"/>
+                </scene-change-through>
+            </group>
+            <int id="0" val="8"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-delay>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="29" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="&amp;quot;I...i lived. Is it time?&amp;quot; She mutters to the people around her."/>
+                    <int id="1" val="30"/>
+                    <int id="2" val="420"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

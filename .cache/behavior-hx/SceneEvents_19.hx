@@ -82,9 +82,9 @@ class SceneEvents_19 extends SceneScript
 			{
 				g.setFont(getFont(38));
 				g.drawString("" + "Options", 0, 1);
-				g.drawString("" + "Audio", 0, 100);
-				g.drawString("" + "On/Off", 100, 100);
-				g.drawString("" + "Song Choice", 0, 200);
+				g.drawString("" + "Audio", 0, 125);
+				g.drawString("" + "On/Off", 125, 125);
+				g.drawString("" + "Song Choice", 0, 250);
 			}
 		});
 		

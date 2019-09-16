@@ -75,6 +75,9 @@ class SceneEvents_10 extends SceneScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		playSoundOnChannel(getSound(43), 0);
+		
 	}
 	
 	override public function forwardMessage(msg:String)

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scenes>
-    <scene desc="" format="4.0.1" id="4" name="BossLevel"/>
-    <scene desc="" format="4.0.1" id="5" name="StoryIntro"/>
-    <scene desc="" format="4.0.1" id="7" name="Credits"/>
-    <scene desc="" format="4.0.1" id="9" name="LevelOne"/>
-    <scene desc="" format="4.0.1" id="10" name="Start"/>
-    <scene desc="" format="4.0.1" id="11" name="StoryEnd_01"/>
-    <scene desc="" format="4.0.1" id="12" name="StoryEnd_02"/>
-    <scene desc="" format="4.0.1" id="13" name="StoryEnd_03"/>
-    <scene desc="" format="4.0.1" id="14" name="StoryEnd_Final"/>
-    <scene desc="" format="4.0.1" id="15" name="End_01"/>
     <scene desc="" format="4.0.1" id="16" name="End_02"/>
     <scene desc="" format="4.0.1" id="17" name="End_03"/>
-    <scene desc="" format="4.0.1" id="18" name="End_Final"/>
     <scene desc="" format="4.0.1" id="19" name="Options"/>
+    <scene desc="" format="4.0.1" id="4" name="BossLevel"/>
+    <scene desc="" format="4.0.1" id="20" name="End_Final"/>
+    <scene desc="" format="4.0.1" id="5" name="StoryIntro"/>
+    <scene desc="" format="4.0.1" id="9" name="LevelOne"/>
+    <scene desc="" format="4.0.1" id="10" name="Start"/>
+    <scene desc="" format="4.0.1" id="15" name="End_01"/>
 </scenes>

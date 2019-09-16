@@ -75,6 +75,16 @@ class SceneEvents_18 extends SceneScript
 	override public function init()
 	{
 		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(38));
+				g.drawString("" + "You destroyed the world", 0, 0);
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)
