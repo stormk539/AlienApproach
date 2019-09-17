@@ -81,7 +81,9 @@ class SceneEvents_20 extends SceneScript
 			if(wrapper.enabled)
 			{
 				g.setFont(getFont(38));
-				g.drawString("" + "You destroyed the world!", 0, 0);
+				g.drawString("" + "You destroyed the world!", 5, 0);
+				g.drawString("" + "Score:", 400, 80);
+				g.drawString("" + (Engine.engine.getGameAttribute("Score") : Float), 500, 80);
 			}
 		});
 		

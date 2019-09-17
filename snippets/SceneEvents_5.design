@@ -7,19 +7,29 @@
                     <font eid="29" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
-                    <int id="0" val="You are white blood cell X. You were injected by Dr.Efil, the best"/>
-                    <int id="1" val="1"/>
+                    <int id="0" val="You are white blood cell X. You were injected by Dr.Efil,"/>
+                    <int id="1" val="5"/>
                     <int id="2" val="1"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
-                    <int id="0" val="doctor in the world. Your mission is to save this patient from"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="25"/>
+                    <int id="0" val="the best doctor in the world. Your mission is to save this"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="45"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="107">
-                    <int id="0" val="certain death. Failure is not an option."/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="50"/>
+                    <int id="0" val="important patient from certain death.Her stomach is riddled"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="90"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="127">
+                    <int id="0" val="with the deadlist bacteria known to man, Bactio-C. "/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="135"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="147">
+                    <int id="0" val="Eradicate everything, the world is in your hands."/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="180"/>
                 </draw-text>
             </group>
         </draw>

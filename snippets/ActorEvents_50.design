@@ -9,7 +9,7 @@
                     <int id="2" val="1"/>
                 </play-sound-channel>
                 <set-volume-channel comment="false" x="26" y="69">
-                    <int id="0" val="50"/>
+                    <int id="0" val="25"/>
                     <int id="1" val="1"/>
                 </set-volume-channel>
                 <control-sound-channel comment="false" x="26" y="89">

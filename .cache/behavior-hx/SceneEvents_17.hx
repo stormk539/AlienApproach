@@ -75,15 +75,6 @@ class SceneEvents_17 extends SceneScript
 	override public function init()
 	{
 		
-		/* ======================= After N seconds ======================== */
-		runLater(1000 * 8, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				switchScene(GameModel.get().scenes.get(20).getID(), null, createCrossfadeTransition(1.5));
-			}
-		}, null);
-		
 		/* ========================= When Drawing ========================= */
 		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{

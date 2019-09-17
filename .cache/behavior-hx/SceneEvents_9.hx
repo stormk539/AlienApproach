@@ -82,7 +82,7 @@ class SceneEvents_9 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		_Score = 500;
+		Engine.engine.setGameAttribute("Score", 500);
 		_EneDeath = 20;
 		
 		/* ========================= When Drawing ========================= */
@@ -92,7 +92,7 @@ class SceneEvents_9 extends SceneScript
 			{
 				g.setFont(getFont(38));
 				g.drawString("" + "Score: ", 460, 440);
-				g.drawString("" + _Score, 550, 440);
+				g.drawString("" + (Engine.engine.getGameAttribute("Score") : Float), 550, 440);
 			}
 		});
 		
@@ -140,9 +140,9 @@ class SceneEvents_9 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if(getLastCreatedActor().isAlive())
+				if(!(_EneDeath == 0))
 				{
-					_Score = (_Score - 10);
+					Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) - 10));
 				}
 			}
 		}, null);

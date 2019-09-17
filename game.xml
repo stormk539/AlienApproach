@@ -11,9 +11,9 @@
     </exts>
     <bundles>
         <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
-        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
-        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0"/>
         <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
+        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0"/>
+        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
     </bundles>
     <scales>
         <scale detailed="1x" id="0" name="1x" size="1.0"/>
@@ -126,6 +126,7 @@
         <number cid="-1" id="6" name="SongSelect" save="true" value="0.0"/>
         <boolean cid="-1" id="2" name="Slide and Increase Speed" save="true" value="false"/>
         <boolean cid="-1" id="5" name="IsPlaying" save="true" value="false"/>
+        <number cid="-1" id="7" name="StoryProg" save="true" value="0"/>
         <boolean cid="-1" id="4" name="Mute" save="true" value="false"/>
         <boolean cid="-1" id="0" name="Move Right" save="true" value="true"/>
     </attributes>

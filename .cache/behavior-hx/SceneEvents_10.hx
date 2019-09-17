@@ -64,11 +64,14 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class SceneEvents_10 extends SceneScript
 {
+	public var _check:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("check", "_check");
+		_check = 0.0;
 		
 	}
 	

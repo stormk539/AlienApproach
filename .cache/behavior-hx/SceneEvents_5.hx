@@ -81,9 +81,11 @@ class SceneEvents_5 extends SceneScript
 			if(wrapper.enabled)
 			{
 				g.setFont(getFont(29));
-				g.drawString("" + "You are white blood cell X. You were injected by Dr.Efil, the best", 1, 1);
-				g.drawString("" + "doctor in the world. Your mission is to save this patient from", 1, 25);
-				g.drawString("" + "certain death. Failure is not an option.", 1, 50);
+				g.drawString("" + "You are white blood cell X. You were injected by Dr.Efil,", 5, 1);
+				g.drawString("" + "the best doctor in the world. Your mission is to save this", 5, 45);
+				g.drawString("" + "important patient from certain death.Her stomach is riddled", 5, 90);
+				g.drawString("" + "with the deadlist bacteria known to man, Bactio-C. ", 5, 135);
+				g.drawString("" + "Eradicate everything, the world is in your hands.", 5, 180);
 			}
 		});
 		
