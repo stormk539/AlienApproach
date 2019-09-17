@@ -102,7 +102,7 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_9" classname="scripts.SceneEvents_9" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="20" name="SceneEvents_9" oid="-1" package="scripts." sceneid="9" shared="false" type="scene">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Score" hidden="false" id="1" name="_Score" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="EneDeath" hidden="false" id="2" name="_EneDeath" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="EneDeath" hidden="false" id="2" name="_EneDeath" order="1"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
@@ -147,9 +147,11 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_10" classname="scripts.SceneEvents_10" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="27" name="SceneEvents_10" oid="-1" package="scripts." sceneid="10" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="check" hidden="false" id="2" name="_check" order="1"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Spin" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="24" attachedevent="true" class="scripts.ActorEvents_24" classname="scripts.ActorEvents_24" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_24" oid="-1" package="scripts." shared="false" type="actor">
@@ -255,6 +257,14 @@
         <blocks/>
         <events>
             <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_52_52_HoverTint" classname="scripts.Design_52_52_HoverTint" desc="" description="" design="true" drawOrder="0" id="52" name="HoverTint" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>

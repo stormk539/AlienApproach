@@ -28,30 +28,22 @@
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <init comment="false" x="25" y="17">
+        <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <scaleTo comment="false" x="36" y="42">
+                <scaleTo comment="false" x="26" y="40">
                     <ACTOR eid="3" id="0"/>
-                    <int id="1" val="49"/>
-                    <int id="2" val="49"/>
-                    <int id="3" val=".58"/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                    <int id="3" val=""/>
                     <int id="4" val="0"/>
                 </scaleTo>
-                <spinToBy comment="false" x="36" y="69">
+                <spinToBy comment="false" x="26" y="67">
                     <ACTOR eid="3" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="76"/>
-                    <int id="3" val=".58"/>
+                    <int id="2" val=""/>
+                    <int id="3" val=""/>
                     <int id="4" val="0"/>
                 </spinToBy>
-                <moveToBy comment="false" x="36" y="96">
-                    <ACTOR eid="3" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="-150"/>
-                    <int id="3" val="-154"/>
-                    <int id="4" val=".58"/>
-                    <int id="5" val="0"/>
-                </moveToBy>
             </group>
         </init>
     </group>

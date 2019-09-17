@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,90 +61,37 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_9 extends SceneScript
+class Design_52_52_HoverTint extends ActorScript
 {
-	public var _Score:Float;
-	public var _EneDeath:Float;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("Score", "_Score");
-		_Score = 0.0;
-		nameMap.set("EneDeath", "_EneDeath");
-		_EneDeath = 0.0;
+		super(actor);
+		nameMap.set("Actor", "actor");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		_Score = 500;
-		_EneDeath = 20;
-		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && 1 == mouseState)
 			{
-				g.setFont(getFont(38));
-				g.drawString("" + "Score: ", 460, 440);
-				g.drawString("" + _Score, 550, 440);
+				actor.setFilter([createTintFilter(Utils.getColorRGB(153,0,0), 75/100)]);
 			}
 		});
 		
-		/* ======================== Actor of Type ========================= */
-		addWhenTypeGroupKilledListener(getActorType(5), function(eventActor:Actor, list:Array<Dynamic>):Void
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && -1 == mouseState)
 			{
-				_EneDeath = (_EneDeath - 1);
+				actor.clearFilters();
 			}
 		});
-		
-		/* ======================== Actor of Type ========================= */
-		addWhenTypeGroupKilledListener(getActorType(7), function(eventActor:Actor, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				_EneDeath = (_EneDeath - 1);
-			}
-		});
-		
-		/* ======================== Actor of Type ========================= */
-		addWhenTypeGroupKilledListener(getActorType(3), function(eventActor:Actor, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				_EneDeath = (_EneDeath - 1);
-			}
-		});
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((_EneDeath == 0))
-				{
-					switchScene(GameModel.get().scenes.get(15).getID(), null, createCrossfadeTransition(0.5));
-				}
-			}
-		});
-		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 2, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(getLastCreatedActor().isAlive())
-				{
-					_Score = (_Score - 10);
-				}
-			}
-		}, null);
 		
 	}
 	

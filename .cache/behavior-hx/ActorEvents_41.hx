@@ -82,13 +82,17 @@ class ActorEvents_41 extends ActorScript
 				if(((Engine.engine.getGameAttribute("Mute") : Bool) == false))
 				{
 					actor.setAnimation("Yes");
-					setVolumeForChannel(100/100, 1);
+					setVolumeForChannel(25/100, 1);
+					setVolumeForChannel(25/100, 2);
+					setVolumeForChannel(25/100, 3);
 					Engine.engine.setGameAttribute("Mute", true);
 				}
 				else if(((Engine.engine.getGameAttribute("Mute") : Bool) == true))
 				{
 					actor.setAnimation("No");
 					setVolumeForChannel(0/100, 1);
+					setVolumeForChannel(0/100, 2);
+					setVolumeForChannel(0/100, 3);
 					Engine.engine.setGameAttribute("Mute", false);
 				}
 			}
