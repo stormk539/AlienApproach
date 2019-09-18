@@ -204,10 +204,12 @@
         </events>
     </snippet>
     <snippet actorid="41" attachedevent="true" class="scripts.ActorEvents_41" classname="scripts.ActorEvents_41" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="42" name="ActorEvents_41" oid="-1" package="scripts." shared="false" type="actor">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="check" hidden="false" id="1" name="_check" order="0"/>
         <blocks/>
         <events>
-            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="4" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="3" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="44" attachedevent="true" class="scripts.ActorEvents_44" classname="scripts.ActorEvents_44" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="43" name="ActorEvents_44" oid="-1" package="scripts." shared="false" type="actor">
