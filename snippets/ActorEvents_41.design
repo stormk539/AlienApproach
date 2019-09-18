@@ -10,15 +10,15 @@
                             <int id="1" val="Yes"/>
                         </setanim>
                         <set-volume-channel comment="false" x="37" y="99">
-                            <int id="0" val="100"/>
+                            <int id="0" val="150"/>
                             <int id="1" val="1"/>
                         </set-volume-channel>
                         <set-volume-channel comment="false" x="37" y="119">
-                            <int id="0" val="100"/>
+                            <int id="0" val="150"/>
                             <int id="1" val="2"/>
                         </set-volume-channel>
                         <set-volume-channel comment="false" x="37" y="139">
-                            <int id="0" val="100"/>
+                            <int id="0" val="150"/>
                             <int id="1" val="3"/>
                         </set-volume-channel>
                         <set-game-val-4 comment="false" x="37" y="159">

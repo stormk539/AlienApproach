@@ -13,7 +13,7 @@
                     <int id="2" val="2"/>
                 </play-sound-channel>
                 <set-volume-channel comment="false" x="26" y="96">
-                    <int id="0" val="100"/>
+                    <int id="0" val="150"/>
                     <int id="1" val="2"/>
                 </set-volume-channel>
                 <control-sound-channel comment="false" x="26" y="116">

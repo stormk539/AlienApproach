@@ -5,6 +5,9 @@
             <s enabled="true" id="52">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="53">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="40" name="B_Back" readable="false" shared="false">
@@ -15,6 +18,9 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="3" id="20" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Exit" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="false">
         <snippets>
             <s enabled="true" id="52">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="53">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -29,6 +35,9 @@
             <s enabled="true" id="52">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="53">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="31" name="B_Next" readable="false" shared="false">
@@ -39,6 +48,9 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="false" fric="0.2" gid="3" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Options" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="false">
         <snippets>
             <s enabled="true" id="52">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="53">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -53,6 +65,9 @@
             <s enabled="true" id="52">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="53">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="47" name="B_Replay" readable="false" shared="false">
@@ -61,7 +76,11 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="49" fixedrot="false" fric="0.2" gid="3" id="50" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Song1" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="51" static="false">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="52">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="51" name="B_Song1" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="256" id="0" loop="true" name="Animation 0" numframes="1" originx="128" originy="128" sync="false" version="2" width="256">
@@ -69,7 +88,11 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="50" fixedrot="false" fric="0.2" gid="3" id="52" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Song2" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="53" static="false">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="52">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="53" name="B_Song2" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="256" id="0" loop="true" name="Animation 0" numframes="1" originx="128" originy="128" sync="false" version="2" width="256">
@@ -77,7 +100,11 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="51" fixedrot="false" fric="0.2" gid="3" id="54" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Song3" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="55" static="false">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="52">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="55" name="B_Song3" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="256" id="0" loop="true" name="Animation 0" numframes="1" originx="128" originy="128" sync="false" version="2" width="256">
@@ -87,6 +114,9 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="23" fixedrot="false" fric="0.2" gid="3" id="18" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Start" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="19" static="false">
         <snippets>
             <s enabled="true" id="52">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="53">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -174,7 +204,6 @@
         </anim>
     </sprite>
     <music atlasID="0" desc="" id="59" loop="true" name="DeathSound" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="36" name="End" numframes="1" oid="-1" readable="false" repeats="true" resized="false" shared="false" width="950" xpf="1.0" ypf="1.0"/>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="16" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <tileset across="1" atlasID="0" desc="" down="3" id="32" name="FleshFloor" oid="-1" readable="false" shared="false" th="32" tw="32">
@@ -275,6 +304,14 @@
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="25" name="Title" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="641" id="0" loop="true" name="Animation 0" numframes="1" originx="320" originy="320" sync="false" version="2" width="640">
+            <poly data="4,0,0,640,0,640,641,0,641" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="54" fixedrot="false" fric="0.2" gid="3" id="61" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Title Copy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="62" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="62" name="Title Copy" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="641" id="0" loop="true" name="Animation 0" numframes="1" originx="320" originy="320" sync="false" version="2" width="640">
             <poly data="4,0,0,640,0,640,641,0,641" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
