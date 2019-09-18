@@ -80,8 +80,8 @@ class SceneEvents_17 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				g.setFont(getFont(38));
-				g.drawString("" + "TO DESTORY THE WORLD", 100, 410);
+				g.setFont(getFont(29));
+				g.drawString("" + "TO DESTORY THE WORLD", 170, 410);
 			}
 		});
 		

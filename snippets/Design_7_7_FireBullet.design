@@ -95,7 +95,7 @@
                                 </setvel>
                                 <play-sound4 comment="false" x="48" y="430">
                                     <int id="0" val="0"/>
-                                    <sound eid="var" id="1" vid="7"/>
+                                    <sound eid="58" id="1"/>
                                 </play-sound4>
                             </group>
                             <not comment="false" id="0" x="0" y="0">
@@ -191,7 +191,7 @@
                         </setvel>
                         <play-sound4 comment="false" x="37" y="818">
                             <int id="0" val="0"/>
-                            <sound eid="var" id="1" vid="7"/>
+                            <sound eid="58" id="1"/>
                         </play-sound4>
                     </group>
                 </else>

@@ -80,7 +80,7 @@ class SceneEvents_15 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				g.setFont(getFont(29));
+				g.setFont(getFont(60));
 				g.drawString("" + "She begins to awake. People cheer as her eyes blink open.", 50, 400);
 			}
 		});

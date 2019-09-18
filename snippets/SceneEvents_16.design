@@ -4,11 +4,11 @@
         <draw comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <set-font-new comment="false" x="26" y="40">
-                    <font eid="29" id="0"/>
+                    <font eid="60" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
                     <int id="0" val="&amp;quot;I...i lived. Is it time?&amp;quot; She mutters to the people around her."/>
-                    <int id="1" val="35"/>
+                    <int id="1" val="30"/>
                     <int id="2" val="400"/>
                 </draw-text>
             </group>

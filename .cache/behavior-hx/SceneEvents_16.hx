@@ -80,8 +80,8 @@ class SceneEvents_16 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				g.setFont(getFont(29));
-				g.drawString("" + "\"I...i lived. Is it time?\" She mutters to the people around her.", 35, 400);
+				g.setFont(getFont(60));
+				g.drawString("" + "\"I...i lived. Is it time?\" She mutters to the people around her.", 30, 400);
 			}
 		});
 		

@@ -4,7 +4,7 @@
         <draw comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <set-font-new comment="false" x="26" y="40">
-                    <font eid="29" id="0"/>
+                    <font eid="60" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
                     <int id="0" val="She begins to awake. People cheer as her eyes blink open."/>
