@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,33 +61,45 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_10 extends SceneScript
+class ActorEvents_30 extends ActorScript
 {
-	public var _check:Float;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("check", "_check");
-		_check = 0.0;
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		if(((Engine.engine.getGameAttribute("IsPlaying") : Bool) == false))
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			loopSoundOnChannel(getSound(56), 2);
-			setVolumeForChannel(125/100, 2);
-			Engine.engine.setGameAttribute("IsPlaying", true);
-		}
-		getActor(1).moveTo(279, -71, 2, Easing.expoInOut);
-		getActor(4).moveTo(279, 57, 4, Easing.expoInOut);
-		getActor(2).moveTo(279, 185, 6, Easing.expoInOut);
-		getActor(5).growTo(60/100, 60/100, 2, Easing.expoInOut);
+			if(wrapper.enabled && 3 == mouseState)
+			{
+				if(((Engine.engine.getGameAttribute("StoryProg") : Float) == 0))
+				{
+					Engine.engine.setGameAttribute("StoryProg", 1);
+					switchScene(GameModel.get().scenes.get(9).getID(), null, createCrossfadeTransition(.30));
+				}
+				else if(((Engine.engine.getGameAttribute("StoryProg") : Float) == 1))
+				{
+					Engine.engine.setGameAttribute("StoryProg", 2);
+					switchScene(GameModel.get().scenes.get(16).getID(), null, createCrossfadeTransition(0.25));
+				}
+				else if(((Engine.engine.getGameAttribute("StoryProg") : Float) == 2))
+				{
+					Engine.engine.setGameAttribute("StoryProg", 3);
+					switchScene(GameModel.get().scenes.get(17).getID(), null, createCrossfadeTransition(0.25));
+				}
+				else if(((Engine.engine.getGameAttribute("StoryProg") : Float) == 3))
+				{
+					switchScene(GameModel.get().scenes.get(20).getID(), null, createCrossfadeTransition(0.25));
+				}
+			}
+		});
 		
 	}
 	

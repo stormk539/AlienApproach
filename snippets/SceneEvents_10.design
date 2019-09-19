@@ -23,37 +23,83 @@
                         <false comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>
-                <moveToBy comment="false" x="26" y="154">
-                    <ACTOR eid="1" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="279"/>
-                    <int id="3" val="-71"/>
-                    <int id="4" val="2"/>
-                    <int id="5" val="11"/>
-                </moveToBy>
-                <moveToBy comment="false" x="26" y="181">
-                    <ACTOR eid="4" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="279"/>
-                    <int id="3" val="57"/>
-                    <int id="4" val="4"/>
-                    <int id="5" val="11"/>
-                </moveToBy>
-                <moveToBy comment="false" x="26" y="208">
-                    <ACTOR eid="2" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="279"/>
-                    <int id="3" val="185"/>
-                    <int id="4" val="6"/>
-                    <int id="5" val="11"/>
-                </moveToBy>
-                <scaleTo comment="false" x="26" y="235">
-                    <ACTOR eid="5" id="0"/>
-                    <int id="1" val="60"/>
-                    <int id="2" val="60"/>
-                    <int id="3" val="2"/>
-                    <int id="4" val="11"/>
-                </scaleTo>
+                <if comment="false" x="26" y="154">
+                    <group eventID="1" id="-1">
+                        <moveToBy comment="false" x="37" y="184">
+                            <ACTOR eid="1" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="279"/>
+                            <int id="3" val="-71"/>
+                            <int id="4" val="2"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <moveToBy comment="false" x="37" y="211">
+                            <ACTOR eid="4" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="279"/>
+                            <int id="3" val="57"/>
+                            <int id="4" val="4"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <moveToBy comment="false" x="37" y="238">
+                            <ACTOR eid="2" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="279"/>
+                            <int id="3" val="185"/>
+                            <int id="4" val="6"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <scaleTo comment="false" x="37" y="265">
+                            <ACTOR eid="5" id="0"/>
+                            <int id="1" val="60"/>
+                            <int id="2" val="60"/>
+                            <int id="3" val="2"/>
+                            <int id="4" val="11"/>
+                        </scaleTo>
+                        <set-game-val-9 comment="false" x="37" y="292">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="329">
+                    <group eventID="1" id="-1">
+                        <moveToBy comment="false" x="37" y="349">
+                            <ACTOR eid="1" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="279"/>
+                            <int id="3" val="-71"/>
+                            <int id="4" val="0"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <moveToBy comment="false" x="37" y="376">
+                            <ACTOR eid="4" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="279"/>
+                            <int id="3" val="57"/>
+                            <int id="4" val="0"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <moveToBy comment="false" x="37" y="403">
+                            <ACTOR eid="2" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="279"/>
+                            <int id="3" val="185"/>
+                            <int id="4" val="0"/>
+                            <int id="5" val="11"/>
+                        </moveToBy>
+                        <scaleTo comment="false" x="37" y="430">
+                            <ACTOR eid="5" id="0"/>
+                            <int id="1" val="60"/>
+                            <int id="2" val="60"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="11"/>
+                        </scaleTo>
+                    </group>
+                </else>
             </group>
         </init>
     </group>
