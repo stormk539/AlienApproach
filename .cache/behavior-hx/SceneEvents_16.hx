@@ -75,6 +75,9 @@ class SceneEvents_16 extends SceneScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		getActor(2).moveTo(286, 182, 3, Easing.expoInOut);
+		
 		/* ========================= When Drawing ========================= */
 		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{

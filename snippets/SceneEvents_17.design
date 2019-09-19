@@ -15,4 +15,19 @@
         </draw>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <moveToBy comment="false" x="26" y="40">
+                    <ACTOR eid="2" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="264"/>
+                    <int id="3" val="192"/>
+                    <int id="4" val="3"/>
+                    <int id="5" val="11"/>
+                </moveToBy>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>

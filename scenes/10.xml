@@ -2,6 +2,7 @@
 <scene depth="1" desc="" eventsnippetid="27" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="10" name="Start" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <color-bg blue="0" green="0" red="0"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Hospital" opacity="100" order="1" rid="68" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
@@ -9,9 +10,10 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="18" name="B_Start 1" order="0" sx="0.2" sy="0.2" x="279" y="-39" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="20" name="B_Exit 2" order="1" sx="0.2" sy="0.2" x="279" y="217" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="26" name="B_Options 4" order="2" sx="0.2" sy="0.2" x="279" y="89" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="24" name="Title 5" order="3" sx="0.690625" sy="0.690625" x="-81" y="-83" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="20" name="B_Exit 2" order="1" sx="0.2" sy="0.2" x="279" y="153" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="26" name="B_Options 4" order="2" sx="0.2" sy="0.2" x="279" y="57" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="24" name="Title 5" order="3" sx="0.690625" sy="0.690625" x="-99" y="-99" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="64" name="BackgroundMan 6" order="4" sx="0.38392857" sy="0.38392857" x="303" y="347" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
