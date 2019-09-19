@@ -82,8 +82,24 @@ class SceneEvents_19 extends SceneScript
 			{
 				g.setFont(getFont(71));
 				g.drawString("" + "Options Menu", 230, 1);
-				g.drawString("" + "Mute", 230, 125);
+				g.drawString("" + "Music", 230, 125);
 				g.drawString("" + "Song Choice", 230, 250);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(((Engine.engine.getGameAttribute("Mute") : Bool) == true))
+				{
+					getActor(2).setAnimation("Yes");
+				}
+				else
+				{
+					getActor(2).setAnimation("No");
+				}
 			}
 		});
 		

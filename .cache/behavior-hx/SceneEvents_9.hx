@@ -83,7 +83,7 @@ class SceneEvents_9 extends SceneScript
 		
 		/* ======================== When Creating ========================= */
 		Engine.engine.setGameAttribute("Score", 500);
-		_EneDeath = 20;
+		_EneDeath = 22;
 		
 		/* ========================= When Drawing ========================= */
 		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void

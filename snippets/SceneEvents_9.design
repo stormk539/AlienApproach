@@ -50,7 +50,7 @@
                     <int id="0" val="500"/>
                 </set-game-val-3>
                 <set-val-20-2 comment="false" x="26" y="60">
-                    <int id="0" val="20"/>
+                    <int id="0" val="22"/>
                 </set-val-20-2>
             </group>
         </init>

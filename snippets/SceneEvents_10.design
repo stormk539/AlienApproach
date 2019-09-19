@@ -11,7 +11,7 @@
                             <int id="2" val="2"/>
                         </play-sound-channel>
                         <set-volume-channel comment="false" x="37" y="97">
-                            <int id="0" val="125"/>
+                            <int id="0" val="150"/>
                             <int id="1" val="2"/>
                         </set-volume-channel>
                         <set-game-val-5 comment="false" x="37" y="117">
