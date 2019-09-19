@@ -263,12 +263,12 @@
             <s enabled="true" id="7">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="fire"/>
-                <prop id="2" list="0" val="22"/>
+                <prop id="2" list="0" val="75"/>
                 <prop id="3" list="0" val=""/>
                 <prop id="4" list="0" val="9"/>
                 <prop id="5" list="0" val="90"/>
                 <prop id="6" list="0" val="90"/>
-                <prop id="7" list="0" val="16"/>
+                <prop id="7" list="0" val="-1"/>
                 <prop id="8" list="0" val="true"/>
                 <prop id="9" list="0" val=""/>
                 <prop id="10" list="0" val="false"/>

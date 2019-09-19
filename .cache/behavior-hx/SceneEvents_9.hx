@@ -82,7 +82,6 @@ class SceneEvents_9 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		Engine.engine.setGameAttribute("Score", 500);
 		_EneDeath = 22;
 		
 		/* ========================= When Drawing ========================= */
@@ -102,6 +101,7 @@ class SceneEvents_9 extends SceneScript
 			if(wrapper.enabled)
 			{
 				_EneDeath = (_EneDeath - 1);
+				Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) + 10));
 			}
 		});
 		
@@ -111,6 +111,7 @@ class SceneEvents_9 extends SceneScript
 			if(wrapper.enabled)
 			{
 				_EneDeath = (_EneDeath - 1);
+				Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) + 25));
 			}
 		});
 		
@@ -120,6 +121,7 @@ class SceneEvents_9 extends SceneScript
 			if(wrapper.enabled)
 			{
 				_EneDeath = (_EneDeath - 1);
+				Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) + 15));
 			}
 		});
 		

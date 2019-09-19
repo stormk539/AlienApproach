@@ -1,51 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <init comment="false" x="15" y="15">
+        <draw comment="false" x="29" y="22">
             <group eventID="1" id="-1">
+                <set-font-new comment="false" x="40" y="47">
+                    <font eid="38" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="40" y="74">
+                    <int id="0" val="Score: "/>
+                    <int id="1" val="460"/>
+                    <int id="2" val="440"/>
+                </draw-text>
+                <draw-text comment="false" x="40" y="94">
+                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="550"/>
+                    <int id="2" val="440"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-56-2 comment="false" x="26" y="40">
+                    <int id="0" val="22"/>
+                </set-val-56-2>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <event-type-create-kill comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-56-2 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-56-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-56-2>
+                <set-game-val-3 comment="false" x="26" y="77">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="10"/>
+                    </plus>
+                </set-game-val-3>
+            </group>
+            <int id="0" val="1"/>
+            <actortype eid="5" id="1"/>
+        </event-type-create-kill>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-type-create-kill comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-56-2 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-56-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-56-2>
+                <set-game-val-3 comment="false" x="26" y="77">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="15"/>
+                    </plus>
+                </set-game-val-3>
+            </group>
+            <int id="0" val="1"/>
+            <actortype eid="7" id="1"/>
+        </event-type-create-kill>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-type-create-kill comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-56-2 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-56-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-56-2>
+                <set-game-val-3 comment="false" x="26" y="77">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="25"/>
+                    </plus>
+                </set-game-val-3>
+            </group>
+            <int id="0" val="1"/>
+            <actortype eid="3" id="1"/>
+        </event-type-create-kill>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
                 <if comment="false" x="26" y="40">
-                    <group eventID="1" id="-1">
-                        <play-sound-channel comment="false" x="37" y="70">
-                            <int id="0" val="1"/>
-                            <sound eid="43" id="1"/>
-                            <int id="2" val="1"/>
-                        </play-sound-channel>
-                        <set-volume-channel comment="false" x="37" y="97">
-                            <int id="0" val="50"/>
-                            <int id="1" val="1"/>
-                        </set-volume-channel>
-                        <set-game-val-5 comment="false" x="37" y="117">
-                            <true comment="false" id="0" x="0" y="0"/>
-                        </set-game-val-5>
+                    <group eventID="8" id="-1">
+                        <scene-change-through comment="false" x="37" y="70">
+                            <scene eid="15" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0.5"/>
+                        </scene-change-through>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-game-val-5 comment="false" id="0" x="0" y="0"/>
-                        <false comment="false" id="1" x="0" y="0"/>
+                        <get-val-56-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
                     </eq>
                 </if>
             </group>
-        </init>
+        </step>
     </group>
-    <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
-        <init comment="false" x="15" y="15">
-            <group eventID="2" id="-1">
-                <scaleTo comment="false" x="26" y="40">
-                    <ACTOR eid="3" id="0"/>
-                    <int id="1" val=""/>
-                    <int id="2" val=""/>
-                    <int id="3" val=""/>
-                    <int id="4" val="0"/>
-                </scaleTo>
-                <spinToBy comment="false" x="26" y="67">
-                    <ACTOR eid="3" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val=""/>
-                    <int id="3" val=""/>
-                    <int id="4" val="0"/>
-                </spinToBy>
-            </group>
-        </init>
-    </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="8" id="-1"/>
 </groups>

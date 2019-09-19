@@ -98,6 +98,7 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_9" classname="scripts.SceneEvents_9" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="20" name="SceneEvents_9" oid="-1" package="scripts." sceneid="9" shared="false" type="scene">
@@ -106,12 +107,12 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
-            <event displayName="Score" enabled="true" id="2" name="event-periodic" order="9" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="7" repeats="true"/>
             <event displayName="BactDie" enabled="true" id="5" name="event-type-create-kill" order="3" repeats="true"/>
             <event displayName="PhageDie" enabled="true" id="6" name="event-type-create-kill" order="4" repeats="true"/>
             <event displayName="VirusDie" enabled="true" id="7" name="event-type-create-kill" order="5" repeats="true"/>
             <event displayName="Updating" enabled="true" id="8" name="step" order="6" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="9" name="event-periodic" order="8" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
@@ -150,7 +151,8 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="check" hidden="false" id="2" name="_check" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Animation and Sound" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Score and Prog Reset" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="24" attachedevent="true" class="scripts.ActorEvents_24" classname="scripts.ActorEvents_24" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_24" oid="-1" package="scripts." shared="false" type="actor">

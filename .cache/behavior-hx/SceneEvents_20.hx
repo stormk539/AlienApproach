@@ -62,48 +62,31 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_10 extends SceneScript
+class SceneEvents_20 extends SceneScript
 {
-	public var _check:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("check", "_check");
-		_check = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		if(((Engine.engine.getGameAttribute("IsPlaying") : Bool) == false))
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
-			loopSoundOnChannel(getSound(57), 2);
-			setVolumeForChannel(150/100, 2);
-			Engine.engine.setGameAttribute("IsPlaying", true);
-		}
-		if(((Engine.engine.getGameAttribute("Slide") : Bool) == true))
-		{
-			getActor(1).moveTo(279, -71, 2, Easing.expoInOut);
-			getActor(4).moveTo(279, 57, 4, Easing.expoInOut);
-			getActor(2).moveTo(279, 185, 6, Easing.expoInOut);
-			getActor(5).growTo(60/100, 60/100, 2, Easing.expoInOut);
-			Engine.engine.setGameAttribute("Slide", false);
-		}
-		else
-		{
-			getActor(1).moveTo(279, -71, 0, Easing.expoInOut);
-			getActor(4).moveTo(279, 57, 0, Easing.expoInOut);
-			getActor(2).moveTo(279, 185, 0, Easing.expoInOut);
-			getActor(5).growTo(60/100, 60/100, 0, Easing.expoInOut);
-		}
-		
-		/* ======================== When Creating ========================= */
-		Engine.engine.setGameAttribute("Score", 0);
-		Engine.engine.setGameAttribute("StoryProg", 0);
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(38));
+				g.drawString("" + "You destroyed the world!", 30, 10);
+				g.drawString("" + "Score:", 400, 80);
+				g.drawString("" + (Engine.engine.getGameAttribute("Score") : Float), 500, 80);
+				Engine.engine.setGameAttribute("LevelSet", true);
+			}
+		});
 		
 	}
 	
