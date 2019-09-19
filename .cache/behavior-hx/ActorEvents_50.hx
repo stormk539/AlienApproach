@@ -79,10 +79,13 @@ class ActorEvents_50 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
-				loopSoundOnChannel(getSound(43), 1);
-				setVolumeForChannel(150/100, 1);
-				stopSoundOnChannel(2);
-				stopSoundOnChannel(3);
+				if(((Engine.engine.getGameAttribute("Mute") : Bool) == true))
+				{
+					loopSoundOnChannel(getSound(43), 1);
+					setVolumeForChannel(150/100, 1);
+					stopSoundOnChannel(2);
+					stopSoundOnChannel(3);
+				}
 			}
 		});
 		

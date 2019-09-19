@@ -23,24 +23,37 @@
                         <false comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>
-                <fadeInOut comment="false" x="26" y="154">
+                <moveToBy comment="false" x="26" y="154">
                     <ACTOR eid="1" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="3"/>
-                    <int id="3" val="0"/>
-                </fadeInOut>
-                <fadeInOut comment="false" x="26" y="181">
+                    <int id="1" val="1"/>
+                    <int id="2" val="279"/>
+                    <int id="3" val="-71"/>
+                    <int id="4" val="2"/>
+                    <int id="5" val="11"/>
+                </moveToBy>
+                <moveToBy comment="false" x="26" y="181">
                     <ACTOR eid="4" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="6"/>
-                    <int id="3" val="0"/>
-                </fadeInOut>
-                <fadeInOut comment="false" x="26" y="208">
+                    <int id="1" val="1"/>
+                    <int id="2" val="279"/>
+                    <int id="3" val="57"/>
+                    <int id="4" val="4"/>
+                    <int id="5" val="11"/>
+                </moveToBy>
+                <moveToBy comment="false" x="26" y="208">
                     <ACTOR eid="2" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="9"/>
-                    <int id="3" val="0"/>
-                </fadeInOut>
+                    <int id="1" val="1"/>
+                    <int id="2" val="279"/>
+                    <int id="3" val="185"/>
+                    <int id="4" val="6"/>
+                    <int id="5" val="11"/>
+                </moveToBy>
+                <scaleTo comment="false" x="26" y="235">
+                    <ACTOR eid="5" id="0"/>
+                    <int id="1" val="60"/>
+                    <int id="2" val="60"/>
+                    <int id="3" val="2"/>
+                    <int id="4" val="11"/>
+                </scaleTo>
             </group>
         </init>
     </group>

@@ -3,23 +3,31 @@
     <group eventID="1" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <control-sound-channel comment="false" x="26" y="42">
-                    <int id="0" val="0"/>
-                    <int id="1" val="1"/>
-                </control-sound-channel>
-                <play-sound-channel comment="false" x="26" y="69">
-                    <int id="0" val="1"/>
-                    <sound eid="57" id="1"/>
-                    <int id="2" val="2"/>
-                </play-sound-channel>
-                <set-volume-channel comment="false" x="26" y="96">
-                    <int id="0" val="150"/>
-                    <int id="1" val="2"/>
-                </set-volume-channel>
-                <control-sound-channel comment="false" x="26" y="116">
-                    <int id="0" val="0"/>
-                    <int id="1" val="3"/>
-                </control-sound-channel>
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <control-sound-channel comment="false" x="37" y="72">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </control-sound-channel>
+                        <play-sound-channel comment="false" x="37" y="99">
+                            <int id="0" val="1"/>
+                            <sound eid="57" id="1"/>
+                            <int id="2" val="2"/>
+                        </play-sound-channel>
+                        <set-volume-channel comment="false" x="37" y="126">
+                            <int id="0" val="150"/>
+                            <int id="1" val="2"/>
+                        </set-volume-channel>
+                        <control-sound-channel comment="false" x="37" y="146">
+                            <int id="0" val="0"/>
+                            <int id="1" val="3"/>
+                        </control-sound-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>

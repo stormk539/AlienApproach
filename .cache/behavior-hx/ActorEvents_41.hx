@@ -87,22 +87,6 @@ class ActorEvents_41 extends ActorScript
 			actor.setAnimation("No");
 		}
 		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(((Engine.engine.getGameAttribute("Mute") : Bool) == false))
-				{
-					actor.setAnimation("Yes");
-				}
-				else if(((Engine.engine.getGameAttribute("Mute") : Bool) == true))
-				{
-					actor.setAnimation("No");
-				}
-			}
-		});
-		
 		/* =========================== On Actor =========================== */
 		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
