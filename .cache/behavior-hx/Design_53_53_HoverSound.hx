@@ -80,7 +80,7 @@ class Design_53_53_HoverSound extends ActorScript
 		{
 			if(wrapper.enabled && 1 == mouseState)
 			{
-				playSound(getSound(16));
+				playSound(getSound(69));
 			}
 		});
 		

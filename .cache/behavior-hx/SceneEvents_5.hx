@@ -75,6 +75,9 @@ class SceneEvents_5 extends SceneScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("StoryProg", 0);
+		
 		/* ========================= When Drawing ========================= */
 		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
@@ -86,6 +89,7 @@ class SceneEvents_5 extends SceneScript
 				g.drawString("" + "important patient from certain death.Her stomach is riddled", 5, 90);
 				g.drawString("" + "with the deadlist bacteria known to man, Bactio-C. ", 5, 135);
 				g.drawString("" + "Eradicate everything, the world is in your hands.", 5, 180);
+				getActor(2).alpha = 50 / 100;
 			}
 		});
 		

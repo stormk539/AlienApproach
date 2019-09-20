@@ -4,30 +4,52 @@
         <draw comment="false" x="15" y="15">
             <group eventID="1" id="-1">
                 <set-font-new comment="false" x="26" y="40">
-                    <font eid="38" id="0"/>
+                    <font eid="71" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
                     <int id="0" val="Options Menu"/>
-                    <int id="1" val="10"/>
+                    <int id="1" val="230"/>
                     <int id="2" val="1"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
-                    <int id="0" val="Mute"/>
-                    <int id="1" val="10"/>
+                    <int id="0" val="Music"/>
+                    <int id="1" val="230"/>
                     <int id="2" val="125"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="107">
-                    <int id="0" val="On/Off"/>
-                    <int id="1" val="100"/>
-                    <int id="2" val="125"/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="127">
                     <int id="0" val="Song Choice"/>
-                    <int id="1" val="10"/>
+                    <int id="1" val="230"/>
                     <int id="2" val="250"/>
                 </draw-text>
             </group>
         </draw>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <setanim comment="false" x="37" y="70">
+                            <ACTOR eid="2" id="0"/>
+                            <int id="1" val="Yes"/>
+                        </setanim>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="109">
+                    <group eventID="2" id="-1">
+                        <setanim comment="false" x="37" y="129">
+                            <ACTOR eid="2" id="0"/>
+                            <int id="1" val="No"/>
+                        </setanim>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

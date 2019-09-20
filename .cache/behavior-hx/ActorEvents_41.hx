@@ -87,22 +87,6 @@ class ActorEvents_41 extends ActorScript
 			actor.setAnimation("No");
 		}
 		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(((Engine.engine.getGameAttribute("Mute") : Bool) == false))
-				{
-					actor.setAnimation("Yes");
-				}
-				else if(((Engine.engine.getGameAttribute("Mute") : Bool) == true))
-				{
-					actor.setAnimation("No");
-				}
-			}
-		});
-		
 		/* =========================== On Actor =========================== */
 		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
@@ -110,15 +94,15 @@ class ActorEvents_41 extends ActorScript
 			{
 				if(((Engine.engine.getGameAttribute("Mute") : Bool) == false))
 				{
-					actor.setAnimation("Yes");
-					setVolumeForChannel(150/100, 1);
-					setVolumeForChannel(150/100, 2);
-					setVolumeForChannel(150/100, 3);
+					actor.setAnimation("No");
+					setVolumeForChannel(100/100, 1);
+					setVolumeForChannel(100/100, 2);
+					setVolumeForChannel(100/100, 3);
 					Engine.engine.setGameAttribute("Mute", true);
 				}
 				else
 				{
-					actor.setAnimation("No");
+					actor.setAnimation("Yes");
 					setVolumeForChannel(0/100, 1);
 					setVolumeForChannel(0/100, 2);
 					setVolumeForChannel(0/100, 3);

@@ -79,7 +79,7 @@ class ActorEvents_46 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
-				switchScene(GameModel.get().scenes.get(9).getID(), null, createCrossfadeTransition(0.30));
+				switchScene(GameModel.get().scenes.get(5).getID(), null, createCrossfadeTransition(0.30));
 			}
 		});
 		

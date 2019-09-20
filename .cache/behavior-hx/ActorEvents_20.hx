@@ -79,6 +79,10 @@ class ActorEvents_20 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
+				if(((Engine.engine.getGameAttribute("LevelSet") : Bool) == true))
+				{
+					switchScene(GameModel.get().scenes.get(10).getID(), null, createCrossfadeTransition(0.25));
+				}
 				exitGame();
 			}
 		});

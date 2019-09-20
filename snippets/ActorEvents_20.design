@@ -3,7 +3,20 @@
     <group eventID="1" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <exit-game comment="false" x="26" y="42"/>
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <scene-change-through comment="false" x="37" y="72">
+                            <scene eid="10" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0.25"/>
+                        </scene-change-through>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <exit-game comment="false" x="26" y="111"/>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>

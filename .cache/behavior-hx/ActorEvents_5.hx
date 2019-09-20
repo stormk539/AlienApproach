@@ -73,7 +73,7 @@ class ActorEvents_5 extends ActorScript
 		nameMap.set("Score", "_Score");
 		_Score = 0.0;
 		nameMap.set("Death", "_Death");
-		_Death = 0;
+		_Death = 0.0;
 		
 	}
 	
