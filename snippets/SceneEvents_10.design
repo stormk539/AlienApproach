@@ -15,12 +15,12 @@
                             <int id="1" val="2"/>
                         </set-volume-channel>
                         <set-game-val-5 comment="false" x="37" y="117">
-                            <true comment="false" id="0" x="0" y="0"/>
+                            <false comment="false" id="0" x="0" y="0"/>
                         </set-game-val-5>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-game-val-5 comment="false" id="0" x="0" y="0"/>
-                        <false comment="false" id="1" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>
                 <if comment="false" x="26" y="154">
