@@ -62,19 +62,16 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_9 extends SceneScript
+class SceneEvents_10 extends SceneScript
 {
-	public var _Score:Float;
-	public var _EneDeath:Float;
+	public var _check:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("Score", "_Score");
-		_Score = 0.0;
-		nameMap.set("EneDeath", "_EneDeath");
-		_EneDeath = 0.0;
+		nameMap.set("check", "_check");
+		_check = 0.0;
 		
 	}
 	
@@ -82,72 +79,31 @@ class SceneEvents_9 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		_EneDeath = 22;
-		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		if(((Engine.engine.getGameAttribute("IsPlaying") : Bool) == true))
 		{
-			if(wrapper.enabled)
-			{
-				g.setFont(getFont(38));
-				g.drawString("" + "Score: ", 460, 440);
-				g.drawString("" + (Engine.engine.getGameAttribute("Score") : Float), 550, 440);
-			}
-		});
-		
-		/* ======================== Actor of Type ========================= */
-		addWhenTypeGroupKilledListener(getActorType(5), function(eventActor:Actor, list:Array<Dynamic>):Void
+			loopSoundOnChannel(getSound(57), 2);
+			setVolumeForChannel(150/100, 2);
+			Engine.engine.setGameAttribute("IsPlaying", false);
+		}
+		if(((Engine.engine.getGameAttribute("Slide") : Bool) == true))
 		{
-			if(wrapper.enabled)
-			{
-				_EneDeath = (_EneDeath - 1);
-				Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) + 10));
-			}
-		});
-		
-		/* ======================== Actor of Type ========================= */
-		addWhenTypeGroupKilledListener(getActorType(7), function(eventActor:Actor, list:Array<Dynamic>):Void
+			getActor(1).moveTo(279, -71, 2, Easing.expoInOut);
+			getActor(4).moveTo(279, 57, 4, Easing.expoInOut);
+			getActor(2).moveTo(279, 185, 6, Easing.expoInOut);
+			getActor(5).growTo(60/100, 60/100, 2, Easing.expoInOut);
+			Engine.engine.setGameAttribute("Slide", false);
+		}
+		else
 		{
-			if(wrapper.enabled)
-			{
-				_EneDeath = (_EneDeath - 1);
-				Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) + 25));
-			}
-		});
+			getActor(1).moveTo(279, -71, 0, Easing.expoInOut);
+			getActor(4).moveTo(279, 57, 0, Easing.expoInOut);
+			getActor(2).moveTo(279, 185, 0, Easing.expoInOut);
+			getActor(5).growTo(60/100, 60/100, 0, Easing.expoInOut);
+		}
 		
-		/* ======================== Actor of Type ========================= */
-		addWhenTypeGroupKilledListener(getActorType(3), function(eventActor:Actor, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				_EneDeath = (_EneDeath - 1);
-				Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) + 15));
-			}
-		});
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((_EneDeath == 0))
-				{
-					switchScene(GameModel.get().scenes.get(15).getID(), null, createCrossfadeTransition(0.5));
-				}
-			}
-		});
-		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 2, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(!(_EneDeath == 0))
-				{
-					Engine.engine.setGameAttribute("Score", ((Engine.engine.getGameAttribute("Score") : Float) - 10));
-				}
-			}
-		}, null);
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("Score", 0);
+		Engine.engine.setGameAttribute("StoryProg", 0);
 		
 	}
 	
