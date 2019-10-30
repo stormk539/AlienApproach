@@ -63,12 +63,15 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class Design_1_1_DieWhenHit extends ActorScript
 {
+	public var _ActorScore:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
 		nameMap.set("Actor", "actor");
+		nameMap.set("ActorScore", "_ActorScore");
+		_ActorScore = 0;
 		
 	}
 	
@@ -83,6 +86,7 @@ class Design_1_1_DieWhenHit extends ActorScript
 				/* See 'Explode on Death' behavior to see the logic for HandleDeath. */
 				actor.shout("_customEvent_" + "HandleDeath");
 				recycleActor(actor.getLastCollidedActor());
+				Engine.engine.setGameAttribute("DeathScore", ((Engine.engine.getGameAttribute("DeathScore") : Float) + _ActorScore));
 				recycleActor(actor);
 			}
 		});

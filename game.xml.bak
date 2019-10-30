@@ -10,10 +10,10 @@
         <e enabled="false" id="test-flash"/>
     </exts>
     <bundles>
-        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
-        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
-        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
         <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0"/>
+        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
+        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
+        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
     </bundles>
     <scales>
         <scale detailed="1x" id="0" name="1x" size="1.0"/>
@@ -96,6 +96,12 @@
             <r id="1"/>
             <r id="9"/>
         </group>
+        <group desc="" id="6" name="Pretty Stuff" type="actortype">
+            <r id="64"/>
+            <r id="24"/>
+            <r id="44"/>
+            <r id="61"/>
+        </group>
     </folders>
     <packs/>
     <groups>
@@ -122,6 +128,8 @@
     </attcats>
     <props/>
     <attributes>
+        <number cid="-1" id="11" name="DeathScore" save="true" value="0.0"/>
+        <boolean cid="-1" id="12" name="ActorDead" save="true" value="false"/>
         <number cid="-1" id="3" name="Score" save="true" value="0.0"/>
         <number cid="-1" id="6" name="SongSelect" save="true" value="0.0"/>
         <boolean cid="-1" id="10" name="LevelSet" save="true" value="false"/>

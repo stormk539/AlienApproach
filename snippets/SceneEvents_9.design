@@ -16,6 +16,25 @@
                     <int id="1" val="550"/>
                     <int id="2" val="440"/>
                 </draw-text>
+                <if comment="false" x="40" y="119">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="51" y="149">
+                            <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                        </draw-text>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
             </group>
         </draw>
     </group>

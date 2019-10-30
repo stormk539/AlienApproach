@@ -13,7 +13,13 @@
                 <die comment="false" x="26" y="152">
                     <ACTOR eid="lastcollided" id="0"/>
                 </die>
-                <die comment="false" x="26" y="179">
+                <set-game-val-11 comment="false" x="26" y="179">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                        <get-val-1-1 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-game-val-11>
+                <die comment="false" x="26" y="209">
                     <ACTOR eid="this" id="0"/>
                 </die>
             </group>

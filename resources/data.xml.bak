@@ -155,6 +155,7 @@
             </s>
             <s enabled="true" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10"/>
             </s>
             <s enabled="true" id="2">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -182,6 +183,7 @@
             </s>
             <s enabled="true" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="25"/>
             </s>
             <s enabled="true" id="2">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -339,6 +341,7 @@
             </s>
             <s enabled="true" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="15"/>
             </s>
             <s enabled="true" id="2">
                 <prop id="2147483647" list="0" val="thisactor"/>
