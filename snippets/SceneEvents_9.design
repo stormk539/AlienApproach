@@ -383,4 +383,48 @@
         </event-mouse-enter-exit-actor>
     </group>
     <group eventID="12" id="-1"/>
+    <group eventID="13" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <die comment="false" x="26" y="47">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+                <set-game-val-13 comment="false" x="26" y="79">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-game-val-13>
+                <if comment="false" x="26" y="109">
+                    <group eventID="13" id="-1">
+                        <shout comment="false" x="37" y="139">
+                            <ACTOR eid="1" id="0"/>
+                            <int id="1" val="PCDeath"/>
+                        </shout>
+                        <die comment="false" x="37" y="166">
+                            <second-actor comment="false" id="0" x="0" y="0"/>
+                        </die>
+                        <dolater comment="false" x="37" y="198">
+                            <group eventID="13" id="-1">
+                                <scene-change-through comment="false" x="48" y="225">
+                                    <scene eid="9" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0.5"/>
+                                </scene-change-through>
+                            </group>
+                            <int id="0" val="1.5"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+            </group>
+            <actortype eid="83" id="0"/>
+            <actortype eid="1" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="13" id="-1"/>
 </groups>
