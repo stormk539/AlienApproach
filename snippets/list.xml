@@ -105,17 +105,21 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_9" classname="scripts.SceneEvents_9" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="20" name="SceneEvents_9" oid="-1" package="scripts." sceneid="9" shared="false" type="scene">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Score" hidden="false" id="1" name="_Score" order="0"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="EneDeath" hidden="false" id="2" name="_EneDeath" order="1"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="PlayerDeath" hidden="false" id="3" name="_PlayerDeath" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="PlayerDeath" hidden="false" id="3" name="_PlayerDeath" order="2"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="BloodOpacity" hidden="false" id="4" name="_BloodOpacity" order="3"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="opacity" hidden="false" id="5" name="_opacity" order="4"/>
         <blocks/>
         <events>
-            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
-            <event displayName="Created" enabled="true" id="3" name="init" order="7" repeats="true"/>
-            <event displayName="BactDie" enabled="true" id="5" name="event-type-create-kill" order="3" repeats="true"/>
-            <event displayName="PhageDie" enabled="true" id="6" name="event-type-create-kill" order="4" repeats="true"/>
-            <event displayName="VirusDie" enabled="true" id="7" name="event-type-create-kill" order="5" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="8" name="step" order="6" repeats="true"/>
-            <event displayName="Every N secs" enabled="true" id="9" name="event-periodic" order="9" repeats="true"/>
-            <event displayName="Actor Created" enabled="true" id="10" name="event-actor-create-kill" order="8" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="5" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
+            <event displayName="BactDie" enabled="true" id="5" name="event-type-create-kill" order="6" repeats="true"/>
+            <event displayName="PhageDie" enabled="true" id="6" name="event-type-create-kill" order="7" repeats="true"/>
+            <event displayName="VirusDie" enabled="true" id="7" name="event-type-create-kill" order="8" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="8" name="step" order="9" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="9" name="event-periodic" order="11" repeats="true"/>
+            <event displayName="Actor Created" enabled="true" id="10" name="event-actor-create-kill" order="10" repeats="true"/>
+            <event displayName="Hit Animation Change" enabled="true" id="11" name="event-key-press-release" order="3" repeats="true"/>
+            <event displayName="ClearScreen" enabled="true" id="12" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
