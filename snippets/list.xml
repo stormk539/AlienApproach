@@ -246,7 +246,9 @@
     </snippet>
     <snippet actorid="48" attachedevent="true" class="scripts.ActorEvents_48" classname="scripts.ActorEvents_48" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="46" name="ActorEvents_48" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="13" attachedevent="true" class="scripts.ActorEvents_13" classname="scripts.ActorEvents_13" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="47" name="ActorEvents_13" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>

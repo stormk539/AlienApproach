@@ -74,6 +74,15 @@ class ActorEvents_48 extends ActorScript
 	override public function init()
 	{
 		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && 3 == mouseState)
+			{
+				playSound(getSound(86));
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

@@ -15,7 +15,7 @@
             <poly data="4,0,0,582,0,582,338,0,338" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="57" fixedrot="false" fric="0.2" gid="3" id="81" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_ClearScreen" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="82" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="57" fixedrot="false" fric="0.2" gid="7" id="81" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_ClearScreen" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="82" static="false">
         <snippets>
             <s enabled="true" id="52">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -221,7 +221,7 @@
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="34" name="Bed_02" numframes="1" oid="-1" readable="false" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="35" name="Bed_03" numframes="1" oid="-1" readable="false" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="73" name="BloodCell" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="56" fixedrot="false" fric="0.2" gid="3" id="79" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BloodSplash" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="80" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="56" fixedrot="false" fric="0.2" gid="7" id="79" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BloodSplash" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="80" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="80" name="BloodSplash" readable="false" shared="false">
@@ -238,13 +238,14 @@
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="78" name="Burning" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <music atlasID="0" desc="" id="85" loop="true" name="Cleaning" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="59" loop="true" name="DeathSound" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="58" fixedrot="false" fric="0.2" gid="6" id="83" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="EnemyProjectile" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="84" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="84" name="EnemyProjectile" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="96" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="48" sync="false" version="2" width="96">
-            <poly data="4,0,0,96,0,96,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="24" originy="24" sync="false" version="2" width="48">
+            <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <tileset across="1" atlasID="0" desc="" down="3" id="32" name="FleshFloor" oid="-1" readable="false" shared="false" th="32" tw="32">
@@ -252,6 +253,7 @@
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="2" id="2" order="-1"/>
     </tileset>
+    <music atlasID="0" desc="" id="86" loop="true" name="GirlLaugh" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="68" name="Hospital" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="48" fixedrot="false" fric="0.2" gid="3" id="11" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="false">
         <snippets>
@@ -402,6 +404,7 @@
             <s enabled="true" id="59">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val=""/>
             </s>
         </snippets>
     </actor>

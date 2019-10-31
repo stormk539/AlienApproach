@@ -111,12 +111,14 @@
         <group desc="" id="4" name="Alien"/>
         <group desc="" id="5" name="Player Projectile"/>
         <group desc="" id="6" name="DNA"/>
+        <group desc="" id="7" name="Screen"/>
     </groups>
     <cgroups>
         <cgroup g1="0" g2="1"/>
-        <cgroup g1="0" g2="6"/>
         <cgroup g1="1" g2="3"/>
+        <cgroup g1="3" g2="6"/>
         <cgroup g1="4" g2="5"/>
+        <cgroup g1="6" g2="6"/>
     </cgroups>
     <input>
         <key id="0" keyname="RIGHT" name="right" vk="39" vks="39"/>
@@ -146,7 +148,7 @@
         <boolean cid="-1" id="5" name="IsPlaying" save="true" value="true"/>
         <boolean cid="-1" id="4" name="Mute" save="true" value="true"/>
         <boolean cid="-1" id="0" name="Move Right" save="true" value="true"/>
-        <number cid="-1" id="13" name="PlayerHealth" save="true" value="0"/>
+        <number cid="-1" id="13" name="PlayerHealth" save="true" value="0.0"/>
     </attributes>
     <collisions>
         <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
@@ -173,7 +175,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,18,20,24,26,28,29,30,32,34,35,37,38,39,41,43,44,46,48,50,52,54,56,57,58,59,60,61,64,68,69,70,71,73,74,75,78,79,81,83," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,18,20,24,26,28,29,30,32,34,35,37,38,39,41,43,44,46,48,50,52,54,56,57,58,59,60,61,64,68,69,70,71,73,74,75,78,79,81,83,85,86," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

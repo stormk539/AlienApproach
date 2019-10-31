@@ -81,9 +81,9 @@ class SceneEvents_9 extends SceneScript
 		nameMap.set("PlayerDeath", "_PlayerDeath");
 		_PlayerDeath = 0.0;
 		nameMap.set("BloodOpacity", "_BloodOpacity");
-		_BloodOpacity = 0;
+		_BloodOpacity = 0.0;
 		nameMap.set("opacity", "_opacity");
-		_opacity = 0;
+		_opacity = 0.0;
 		
 	}
 	
@@ -107,6 +107,8 @@ class SceneEvents_9 extends SceneScript
 				_BloodOpacity = 0;
 				getActor(24).alpha = 0 / 100;
 				getActor(25).moveTo(591, 244, 1.5, Easing.expoInOut);
+				setVolumeForChannel(150/100, 4);
+				playSoundOnChannel(getSound(85), 4);
 			}
 		});
 		
@@ -117,15 +119,6 @@ class SceneEvents_9 extends SceneScript
 			{
 				recycleActor(event.thisActor);
 				Engine.engine.setGameAttribute("PlayerHealth", ((Engine.engine.getGameAttribute("PlayerHealth") : Float) - 1));
-				if(((Engine.engine.getGameAttribute("PlayerHealth") : Float) <= 0))
-				{
-					getActor(1).shout("_customEvent_" + "PCDeath");
-					recycleActor(event.otherActor);
-					runLater(1000 * 1.5, function(timeTask:TimedTask):Void
-					{
-						switchScene(GameModel.get().scenes.get(9).getID(), null, createCrossfadeTransition(0.5));
-					}, null);
-				}
 			}
 		});
 		
@@ -224,6 +217,26 @@ class SceneEvents_9 extends SceneScript
 				if((_BloodOpacity == 5))
 				{
 					getActor(25).moveTo(432, 244, 1.5, Easing.expoInOut);
+				}
+				if(((Engine.engine.getGameAttribute("PlayerHealth") : Float) == 4))
+				{
+					getActor(1).setAnimation("FirstHit");
+				}
+				else if(((Engine.engine.getGameAttribute("PlayerHealth") : Float) == 3))
+				{
+					getActor(1).setAnimation("SecondHit");
+				}
+				else if(((Engine.engine.getGameAttribute("PlayerHealth") : Float) == 2))
+				{
+					getActor(1).setAnimation("ThirdHit");
+				}
+				else if(((Engine.engine.getGameAttribute("PlayerHealth") : Float) == 1))
+				{
+					getActor(1).setAnimation("FourthHit");
+				}
+				else if(((Engine.engine.getGameAttribute("PlayerHealth") : Float) == 0))
+				{
+					getActor(1).setAnimation("dead");
 				}
 			}
 		});

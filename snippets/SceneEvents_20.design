@@ -24,6 +24,18 @@
                 <set-game-val-10 comment="false" x="26" y="132">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-game-val-10>
+                <fadeInOut comment="false" x="26" y="157">
+                    <ACTOR eid="3" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="2"/>
+                    <int id="3" val="11"/>
+                </fadeInOut>
+                <fadeInOut comment="false" x="26" y="184">
+                    <ACTOR eid="2" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="2"/>
+                    <int id="3" val="11"/>
+                </fadeInOut>
             </group>
         </draw>
     </group>

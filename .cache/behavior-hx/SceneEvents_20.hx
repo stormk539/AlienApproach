@@ -85,6 +85,8 @@ class SceneEvents_20 extends SceneScript
 				g.drawString("" + "Score:", 400, 80);
 				g.drawString("" + (Engine.engine.getGameAttribute("Score") : Float), 500, 80);
 				Engine.engine.setGameAttribute("LevelSet", true);
+				getActor(3).fadeTo(1, 2, Easing.expoInOut);
+				getActor(2).fadeTo(1, 2, Easing.expoInOut);
 			}
 		});
 		
